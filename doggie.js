@@ -34,11 +34,11 @@ function treatClick(number){
 }
 
 function treatDown(){
-    document.getElementById("treatbutton").style.backgroundColor = "#BCD200";
+    document.getElementById("treatbutton").style.backgroundColor = "#ecccff";
 }
 
 function treatUp(){
-    document.getElementById("treatbutton").style.backgroundColor = "#BCD2EE";
+    document.getElementById("treatbutton").style.backgroundColor = "#f6e6ff";
 }
 
 

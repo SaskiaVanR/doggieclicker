@@ -11,8 +11,8 @@ and open the template in the editor.
 div {
     height: 50px;
     width: 120px;
-    border-color:#6495ED;
-    background-color:#BCD2EE;
+    border-color:#ecccff;
+    background-color:#f6e6ff;
     border-style:solid;
     border-radius:5px;
     cursor: pointer; 
