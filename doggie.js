@@ -151,7 +151,7 @@ function moveDog(dog){
     dog.d.style.top = dog.dogposition[1]+'px';
 }
 
-
+var isdog = false;
 
 window.setInterval(function(){
     treatClick(clickers[0]/10);
@@ -175,7 +175,7 @@ window.setInterval(function(){
         if (sinceLastDog>=2000){
             newDog();
             console.log("new doggo");
-            
+            document.getElementById("numdogs").innerHTML = dogs.length;
             sinceLastDog = 0;
         } else {
             sinceLastDog +=100;
@@ -183,5 +183,11 @@ window.setInterval(function(){
     }
     for (i = 0; i<dogs.length;i++){
         moveDog(dogs[i]);
+    }
+    
+    if (!isdog && perSecond>=5){
+        isdog = true;
+        document.getElementById("numdogstext").style.display = "inline";
+        document.getElementById("numdogs").innerHTML = dogs.length;
     }
 }, 100);

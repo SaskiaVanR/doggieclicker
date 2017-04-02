@@ -8,18 +8,32 @@ and open the template in the editor.
     Author     : Saskia
 */
 
-div {
-    height: 50px;
-    width: 120px;
+#treatbutton {
+    height: 20px;
+    width: 80px;
     border-color:#ecccff;
     background-color:#f6e6ff;
     border-style:solid;
-    border-radius:5px;
+    border-radius:2px;
     cursor: pointer; 
     cursor: hand;
+    display: table;
+}
+#clicktext {
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 p {
+    font-family: "Arial";
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
