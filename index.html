@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="doggie.css" />
+        <title>Doggie Clicker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="doggie.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        Treats: <span id="treats">0</span>
+        <br/>
+        <button onclick="treatClick(1)">Click Me!</button>
+        <br/>
+        <br/>
+        You are making <span id="perSecond">0</span> extra doggie treats per second.
+        <br/>
+        Ovens: <span id="ovens">0</span>
+        <button onClick="buyFactory(0)">Buy Oven</button> 
+        for <span id="ovenCost">10</span> treats
+        <br/>
+        Bakeries: <span id="bakeries">0</span>
+        <button onClick="buyFactory(1)">Buy Bakery</button> 
+        for <span id="bakeryCost">500</span> treats
+        <br/>
+        Factories: <span id="factories">0</span>
+        <button onClick="buyFactory(2)">Buy Treat Factory</button> 
+        for <span id="factoryCost">10000</span> treats
+        <br/>
+        <img src ="acecutout.jpg" id="doggo" style="display:none;top:100px;left:200px;height:50px;width:50px;">
+        
+    </body>
+</html>
