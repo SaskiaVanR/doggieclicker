@@ -33,6 +33,15 @@ function treatClick(number){
     document.getElementById("treats").innerHTML = Math.round(treats);
 }
 
+function treatDown(){
+    document.getElementById("treatbutton").style.backgroundColor = "#BCD200";
+}
+
+function treatUp(){
+    document.getElementById("treatbutton").style.backgroundColor = "#BCD2EE";
+}
+
+
 var clickers = [0,0,0];
 var clickernames = ['ovens', 'bakeries', 'factories'];
 var costnames = ['ovenCost', 'bakeryCost', 'factoryCost'];

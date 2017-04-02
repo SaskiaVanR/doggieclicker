@@ -8,3 +8,23 @@ and open the template in the editor.
     Author     : Saskia
 */
 
+div {
+    height: 50px;
+    width: 120px;
+    border-color:#6495ED;
+    background-color:#BCD2EE;
+    border-style:solid;
+    border-radius:5px;
+    cursor: pointer; 
+    cursor: hand;
+}
+
+p {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
