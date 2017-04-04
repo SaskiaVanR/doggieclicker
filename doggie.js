@@ -5,12 +5,12 @@
  */
 
 var treats = 0;
-var dogposition = [200,300];
+var dogposition = [300,300];
 var dogs = [];
 var sinceLastDog = 3000;
 
 function Dog(dogs){
-    this.dogposition = [200,300];
+    this.dogposition = [300,300];
     this.d = document.createElement("IMG");
     this.d.src = "acecutout.jpg";
     this.d.style.position = "absolute";
@@ -135,17 +135,17 @@ function moveDog(dog){
         }
         
     }
-    if (dog.dogposition[0]<200){
-        dog.dogposition[0]=200;
+    if (dog.dogposition[0]<300){
+        dog.dogposition[0]=300;
     }
-    if (dog.dogposition[1]<200){
-        dog.dogposition[1]=200;
+    if (dog.dogposition[1]<300){
+        dog.dogposition[1]=300;
     }
-    if (dog.dogposition[0]>500){
+    if (dog.dogposition[0]>600){
         dog.dogposition[0]=500;
     }
-    if (dog.dogposition[1]>500){
-        dog.dogposition[1]=500;
+    if (dog.dogposition[1]>600){
+        dog.dogposition[1]=600;
     }
     dog.d.style.left = dog.dogposition[0]+ 'px';
     dog.d.style.top = dog.dogposition[1]+'px';
