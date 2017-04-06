@@ -125,7 +125,7 @@ function moveDog(dog){
         dog.dogposition[1]=300;
     }
     if (dog.dogposition[0]>600){
-        dog.dogposition[0]=500;
+        dog.dogposition[0]=600;
     }
     if (dog.dogposition[1]>600){
         dog.dogposition[1]=600;
@@ -172,5 +172,9 @@ window.setInterval(function(){
         isdog = true;
         document.getElementById("numdogstext").style.display = "inline";
         document.getElementById("numdogs").innerHTML = dogs.length;
+        
+    }
+    if (dogs.length===2){
+        document.getElementById("dogplural").innerHTML = "Dogs";
     }
 }, 100);
