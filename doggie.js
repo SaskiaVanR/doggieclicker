@@ -69,6 +69,23 @@ function updatePerSecond(){
     document.getElementById('perSecond').innerHTML = perSecond;
 }
 
+
+
+function moveDoggo(dog){
+    direction = Math.floor(Math.random()*4);
+    if (direction===0){
+        dogposition = [dogposition[0]-10,dogposition[1]];
+    } else if (direction===1){
+        dogposition = [dogposition[0],dogposition[1]-10];
+    } else if (direction===2){
+        dogposition = [dogposition[0]+10,dogposition[1]];
+    } else {
+        dogposition = [dogposition[0],dogposition[1]+10];
+    }
+    dog.style.left = dogposition[0]+ 'px';
+    dog.style.top = dogposition[1]+'px';
+}
+
 function moveDog(dog){
     direct = Math.floor(Math.random()*3);
     console.log(direct+" "+dog.direction);
