@@ -192,6 +192,6 @@ window.setInterval(function(){
         
     }
     if (dogs.length===2){
-        document.getElementById("dogplural").innerHTML = "Dogs";
+        document.getElementById("dogplural").innerHTML = "Doggos";
     }
 }, 100);
