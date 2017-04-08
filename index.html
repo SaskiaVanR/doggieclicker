@@ -15,7 +15,13 @@ and open the template in the editor.
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <p>Treats: <span id="treats">0</span></p>
+        <div id="head">
+            <div id="headtext">
+                <p style="float:left;"> Doggie Clicker </p> 
+                <p style="float:right;" id="treats">Treats: 0</p>
+            </div>
+        </div>
+        <div id="nonheader">
         
         <div id="treatbutton" onclick="treatClick(1)" onmousedown="treatDown()" onmouseup="treatUp()"><div id="clicktext" style="text-align:center;vertical-align: middle;line-height: 7px;"><p>Click Me!</p></div></div>
         <br/>
@@ -34,9 +40,11 @@ and open the template in the editor.
         for <span id="factoryCost">10000</span> treats</p>
         <br/>
         <br/>
-        <p id="numdogstext" style="display:none;">You have <span id="numdogs">0</span> <span id="dogplural">Dog</span></p>
+        <p id="numdogstext" style="display:none;">You have <span id="numdogs">0</span> <span id="dogplural">Doggo</span></p>
         <br/>
-        <img src ="acecutout.jpg" id="doggo" style="display:none;top:100px;left:200px;height:50px;width:50px;">
         
+        <div id="doggotime"></div>
+        <img src ="acecutout.jpg" id="doggo" style="display:none;top:100px;left:200px;height:50px;width:50px;">
+        </div>
     </body>
 </html>

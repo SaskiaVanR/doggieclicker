@@ -20,7 +20,7 @@ function Dog(dogs){
     this.d.style.height = "50px";
     this.d.style.width = "50px";
     this.direction = 3;
-    document.body.appendChild(this.d);
+    document.getElementById("doggotime").appendChild(this.d);
 }
 
 function newDog(){
@@ -30,7 +30,7 @@ function newDog(){
 
 function treatClick(number){
     treats = treats + number;
-    document.getElementById("treats").innerHTML = Math.round(treats);
+    document.getElementById("treats").innerHTML = "Treats: "+ Math.round(treats);
 }
 
 function treatDown(){
@@ -53,7 +53,7 @@ function buyFactory(type){
         clickers[type] = clickers[type]+1;
         treats = treats - clickerCost;
         document.getElementById(clickernames[type]).innerHTML = clickers[type];
-        document.getElementById('treats').innerHTML = Math.round(treats);
+        document.getElementById('treats').innerHTML = "Treats: "+Math.round(treats);
         
         
     }
@@ -67,23 +67,6 @@ var perSecond = 0;
 function updatePerSecond(){
     perSecond = clickers[0]*1+clickers[1]*50+clickers[2]*1000;
     document.getElementById('perSecond').innerHTML = perSecond;
-}
-
-
-
-function moveDoggo(dog){
-    direction = Math.floor(Math.random()*4);
-    if (direction===0){
-        dogposition = [dogposition[0]-10,dogposition[1]];
-    } else if (direction===1){
-        dogposition = [dogposition[0],dogposition[1]-10];
-    } else if (direction===2){
-        dogposition = [dogposition[0]+10,dogposition[1]];
-    } else {
-        dogposition = [dogposition[0],dogposition[1]+10];
-    }
-    dog.style.left = dogposition[0]+ 'px';
-    dog.style.top = dogposition[1]+'px';
 }
 
 function moveDog(dog){
@@ -168,10 +151,7 @@ window.setInterval(function(){
         d.style.top = y_pos+'px';
         dogposition = [x_pos,y_pos];
     }
-    if (perSecond>=3){
-        moveDoggo(document.getElementById("doggo"));
-    }
-    if (perSecond>=5){
+    if (perSecond>=1){
         if (sinceLastDog>=2000){
             newDog();
             console.log("new doggo");
@@ -185,7 +165,7 @@ window.setInterval(function(){
         moveDog(dogs[i]);
     }
     
-    if (!isdog && perSecond>=5){
+    if (!isdog && perSecond>=1){
         isdog = true;
         document.getElementById("numdogstext").style.display = "inline";
         document.getElementById("numdogs").innerHTML = dogs.length;
