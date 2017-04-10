@@ -10,7 +10,6 @@ and open the template in the editor.
 
 #treatbutton {
     height: 20px;
-    width: 80px;
     border-color:#ecccff;
     background-color:#f6e6ff;
     border-style:solid;
@@ -18,6 +17,8 @@ and open the template in the editor.
     cursor: pointer; 
     cursor: hand;
     display: table;
+    float:right;
+    padding:3px;
 }
 #clicktext {
     
